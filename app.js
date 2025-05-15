@@ -16,7 +16,7 @@ app.use('/api', authRoutes);
 
 // Rota para a página de login
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'imagem', 'login.html'));
+    res.sendFile(path.join(__dirname, 'public', 'login.html'));
 });
 
 // Rota para a página de cadastro

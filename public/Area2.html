@@ -5,28 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Hopi Hari</title>
     <style>
-        * {
+       
+        :root {
+            --primary-color: #f97316;
+            /* --secondary-color: #3b82f6; */
+            --accent-color: #f97316;
+            --background-color: #f0f9ff;
+            --text-color: #1e293b;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
         }
-        
-        body {
-            background-color: #f5f5f5;
-            min-height: 100vh;
-        }
-        
+
         .header {
-            background-color: #FF6B00;
+            background-color: var(--primary-color);
+            /* background-color: #FF6B00; */
             color: white;
             padding: 15px 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            position: fixed;
+            text-align: center;
+            background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            /* position: fixed; */
             width: 100%;
-            top: 0;
-            z-index: 100;
+            /* top: 0; */
+            /* z-index: 100; */
         }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
         
         .container {
             width: 100%;
@@ -470,6 +484,7 @@
 </head>
 <body>
     <header class="header">
+        <h1>Mistieri</h1>
         <div class="container">
             <div class="header-content">
                 <div class="logo">
@@ -497,15 +512,15 @@
         <div class="dashboard-cards">
             <div class="card">
                 <div class="card-image">
-                    <img src="imagem/Le Voyage.jpg" alt="Montanha-Russa La Tour Eiffel">
+                    <img src="Montezum.jpg" alt="Montanha-Russa La Tour Eiffel">
                 </div>
                 <div class="card-content">
-                    <h3 class="card-title">La Tour Eiffel</h3>
+                    <h3 class="card-title">Montezum</h3>
                     <p class="card-text">A maior montanha-russa do Brasil, com 44 metros de altura e velocidade de até 100 km/h. Uma experiência radical para os mais corajosos!</p>
                     <div class="ride-info">
-                        <h3 class="ride-name">La Tour Eiffel</h3>
+                        <h3 class="ride-name">Montezum</h3>
                         <div class="ride-time">35 min</div>
-                        <span class="ride-status status-busy">Muito Movimentadoxxx</span>
+                        <span class="ride-status status-busy">Muito Movimentado</span>
                     </div>
                     <a href="#" class="card-button">Saiba Mais</a>
                 </div>
@@ -513,13 +528,13 @@
             
             <div class="card">
                 <div class="card-image">
-                    <img src="imagem/Rio Bravo.jpg" alt="Rio Bravo">
+                    <img src="vugaga.png" alt="Rio Bravo">
                 </div>
                 <div class="card-content">
-                    <h3 class="card-title">Rio Bravo</h3>
-                    <p class="card-text">Desça por corredeiras em um bote e prepare-se para se molhar! Uma atração perfeita para os dias quentes com toda a família.</p>
+                    <h3 class="card-title">Vurang</h3>
+                    <p class="card-text">Montanha russa no escuro.</p>
                     <div class="ride-info">
-                        <h3 class="ride-name">Rio Bravo</h3>
+                        <h3 class="ride-name">Vurang</h3>
                         <div class="ride-time">15 min</div>
                         <span class="ride-status status-open">Normal</span>
                     </div>
@@ -529,15 +544,15 @@
             
             <div class="card">
                 <div class="card-image">
-                    <img src="imagem/Montezum.jpg" alt="Montezum">
+                    <img src="ekaka.png" alt="Montezum">
                 </div>
                 <div class="card-content">
-                    <h3 class="card-title">Montezum</h3>
-                    <p class="card-text">Uma das maiores montanhas-russas de madeira do mundo, com 700m de extensão e um impressionante tempo de funcionamento.</p>
+                    <h3 class="card-title">Ekatomb ANUNNAKI</h3>
+                    <p class="card-text">Atração que gira os visitantes em várias direções.</p>
                     <div class="ride-info">
-                        <h3 class="ride-name">Montezum</h3>
+                        <h3 class="ride-name">Ekatomb ANUNNAKI</h3>
                         <div class="ride-time">35 min</div>
-                        <span class="ride-status status-maintenance">Manutenção</span>
+                        <span class="ride-status status-maintenance">Normal</span>
                     </div>
                     <a href="#" class="card-button">Saiba Mais</a>
                 </div>
@@ -545,13 +560,13 @@
             
             <div class="card">
                 <div class="card-image">
-                    <img src="imagem/Tirolesa.jpg" alt="Looping Star">
+                    <img src="Katakumb.png" alt="Looping Star">
                 </div>
                 <div class="card-content">
-                    <h3 class="card-title">Looping Star</h3>
-                    <p class="card-text">Uma montanha-russa clássica com um looping de 360 graus que vai deixar seu coração acelerado!</p>
+                    <h3 class="card-title">Katakumb</h3>
+                    <p class="card-text"> Templo egípcio com cenários assustadores.</p>
                     <div class="ride-info">
-                        <h3 class="ride-name">Looping Star</h3>
+                        <h3 class="ride-name">Katakumb</h3>
                         <div class="ride-time">25 min</div>
                         <span class="ride-status status-open">Normal</span>
                     </div>
@@ -560,15 +575,15 @@
             </div>
             <div class="card">
                 <div class="card-image">
-                    <img src="imagem/Le Voyage.jpg" alt="Montanha-Russa La Tour Eiffel">
+                    <img src="simulakron-min.png" alt="Montanha-Russa La Tour Eiffel">
                 </div>
                 <div class="card-content">
-                    <h3 class="card-title">La Tour Eiffel</h3>
-                    <p class="card-text">A maior montanha-russa do Brasil, com 44 metros de altura e velocidade de até 100 km/h. Uma experiência radical para os mais corajosos!</p>
+                    <h3 class="card-title">Simulákron</h3>
+                    <p class="card-text">Simulador com efeitos especiais.</p>
                     <div class="ride-info">
-                        <h3 class="ride-name">La Tour Eiffel</h3>
+                        <h3 class="ride-name">Simulákron</h3>
                         <div class="ride-time">35 min</div>
-                        <span class="ride-status status-busy">Muito Movimentadoxxx</span>
+                        <span class="ride-status status-busy">Muito Movimentado</span>
                     </div>
                     <a href="#" class="card-button">Saiba Mais</a>
                 </div>
@@ -576,13 +591,13 @@
             
             <div class="card">
                 <div class="card-image">
-                    <img src="imagem/Rio Bravo.jpg" alt="Rio Bravo">
+                    <img src="vulk.png" alt="Rio Bravo">
                 </div>
                 <div class="card-content">
-                    <h3 class="card-title">Rio Bravo</h3>
-                    <p class="card-text">Desça por corredeiras em um bote e prepare-se para se molhar! Uma atração perfeita para os dias quentes com toda a família.</p>
+                    <h3 class="card-title">Vulaviking</h3>
+                    <p class="card-text">Barco viking que balança até 90 graus.</p>
                     <div class="ride-info">
-                        <h3 class="ride-name">Rio Bravo</h3>
+                        <h3 class="ride-name">Vulaviking</h3>
                         <div class="ride-time">15 min</div>
                         <span class="ride-status status-open">Normal</span>
                     </div>
@@ -590,102 +605,7 @@
                 </div>
             </div>
             
-            <div class="card">
-                <div class="card-image">
-                    <img src="imagem/Montezum.jpg" alt="Montezum">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Montezum</h3>
-                    <p class="card-text">Uma das maiores montanhas-russas de madeira do mundo, com 700m de extensão e um impressionante tempo de funcionamento.</p>
-                    <div class="ride-info">
-                        <h3 class="ride-name">Montezum</h3>
-                        <div class="ride-time">35 min</div>
-                        <span class="ride-status status-maintenance">Manutenção</span>
-                    </div>
-                    <a href="#" class="card-button">Saiba Mais</a>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-image">
-                    <img src="imagem/Tirolesa.jpg" alt="Looping Star">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Looping Star</h3>
-                    <p class="card-text">Uma montanha-russa clássica com um looping de 360 graus que vai deixar seu coração acelerado!</p>
-                    <div class="ride-info">
-                        <h3 class="ride-name">Looping Star</h3>
-                        <div class="ride-time">25 min</div>
-                        <span class="ride-status status-open">Normal</span>
-                    </div>
-                    <a href="#" class="card-button">Saiba Mais</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="imagem/Le Voyage.jpg" alt="Montanha-Russa La Tour Eiffel">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">La Tour Eiffel</h3>
-                    <p class="card-text">A maior montanha-russa do Brasil, com 44 metros de altura e velocidade de até 100 km/h. Uma experiência radical para os mais corajosos!</p>
-                    <div class="ride-info">
-                        <h3 class="ride-name">La Tour Eiffel</h3>
-                        <div class="ride-time">35 min</div>
-                        <span class="ride-status status-busy">Muito Movimentadoxxx</span>
-                    </div>
-                    <a href="#" class="card-button">Saiba Mais</a>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-image">
-                    <img src="imagem/Rio Bravo.jpg" alt="Rio Bravo">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Rio Bravo</h3>
-                    <p class="card-text">Desça por corredeiras em um bote e prepare-se para se molhar! Uma atração perfeita para os dias quentes com toda a família.</p>
-                    <div class="ride-info">
-                        <h3 class="ride-name">Rio Bravo</h3>
-                        <div class="ride-time">15 min</div>
-                        <span class="ride-status status-open">Normal</span>
-                    </div>
-                    <a href="#" class="card-button">Saiba Mais</a>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-image">
-                    <img src="imagem/Montezum.jpg" alt="Montezum">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Montezum</h3>
-                    <p class="card-text">Uma das maiores montanhas-russas de madeira do mundo, com 700m de extensão e um impressionante tempo de funcionamento.</p>
-                    <div class="ride-info">
-                        <h3 class="ride-name">Montezum</h3>
-                        <div class="ride-time">35 min</div>
-                        <span class="ride-status status-maintenance">Manutenção</span>
-                    </div>
-                    <a href="#" class="card-button">Saiba Mais</a>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-image">
-                    <img src="imagem/Tirolesa.jpg" alt="Looping Star">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Looping Star</h3>
-                    <p class="card-text">Uma montanha-russa clássica com um looping de 360 graus que vai deixar seu coração acelerado!</p>
-                    <div class="ride-info">
-                        <h3 class="ride-name">Looping Star</h3>
-                        <div class="ride-time">25 min</div>
-                        <span class="ride-status status-open">Normal</span>
-                    </div>
-                    <a href="#" class="card-button">Saiba Mais</a>
-                </div>
-            </div>
-        </div>
-        
+          
        
         
     </main>
